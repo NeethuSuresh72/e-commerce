@@ -1,0 +1,14 @@
+.contact-card{
+    padding: 30px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card p{
+    margin-bottom: 15px;
+}
+
+h1{
+    font-weight: bold;
+}

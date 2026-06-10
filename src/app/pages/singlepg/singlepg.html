@@ -1,0 +1,43 @@
+<div class="container text-center">
+
+  <h1>{{ singleData.title }}</h1>
+
+  <div class="row my-5">
+
+    <div class="col-md-6">
+      <img
+        [src]="singleData.image"
+        class="d-block w-100"
+        alt="Product Image"
+      >
+    </div>
+
+    <div class="col-md-6">
+
+      <p>{{ singleData.description }}</p>
+
+      <h4><b>₹{{ singleData.price }}</b></h4>
+
+      <div class="container text-center mt-4">
+        <div class="row">
+
+          <div class="col">
+            <button type="button" class="btn btn-warning">
+              Buy
+            </button>
+          </div>
+
+          <div class="col">
+            <button type="button" class="btn btn-warning">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+footer{
+    width: 100%;
+}
+
+footer ul li{
+    margin-bottom: 8px;
+}
+
+footer h5{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,66 @@
+.custom-nav{
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 15px 0;
+}
+
+.brand-logo{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #111;
+    text-decoration: none;
+}
+
+.navbar-nav{
+    gap: 25px;
+}
+
+.nav-link{
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: .3s;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.search-box input{
+    width: 220px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+}
+
+.cart-btn{
+    border: none;
+    background: black;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.cart-btn:hover{
+    transform: scale(1.08);
+}

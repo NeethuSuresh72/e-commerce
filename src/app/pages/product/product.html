@@ -1,0 +1,29 @@
+<div class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Our Products
+    </h2>
+
+    <div class="row">
+
+        @for (item of product; track item.id) {
+
+            <div class="col-md-4 mb-4">
+
+                <app-product-card
+                    [productData]="item">
+                </app-product-card>
+
+            </div>
+
+        } @empty {
+
+            <div class="text-center">
+                <p>No products available.</p>
+            </div>
+
+        }
+
+    </div>
+
+</div>

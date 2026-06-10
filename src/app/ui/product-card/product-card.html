@@ -1,0 +1,28 @@
+@if(productData){
+
+<div class="card shadow mx-auto h-100">
+
+    <img
+        [src]="productData.image"
+        class="card-img-top"
+        [alt]="productData.title">
+
+    <div class="card-body">
+
+        <h5 class="card-title">
+            {{ productData.title }}
+        </h5>
+
+        <p class="card-text fw-bold text-primary">
+            ₹{{ productData.price }}
+        </p>
+
+        <a class="btn btn-primary w-100" [routerLink]="['/singlepg', productData.id]">
+            Buy
+        </a>
+
+    </div>
+
+</div>
+
+}
